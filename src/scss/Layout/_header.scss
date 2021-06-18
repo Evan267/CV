@@ -1,0 +1,42 @@
+.header{
+    box-shadow: 0 0.8vw 1vw -1vw grey;
+    background-color: white;
+    width:100%;
+    margin-bottom: 4vw;
+    &__info{
+      display: flex;
+      flex-direction: row-reverse;
+      border-radius: 0 4.5vw 4.5vw 0;
+      width: 35%;
+      background-color: $color-primary;
+      box-shadow: 0 0 1vw grey;
+      color: white;
+      justify-content: end;
+      margin: 1vw 0;
+      padding: 1vw 0;
+      animation: apparition-header-info 600ms both;
+      animation-delay: 300ms;
+    }
+    &__img{
+      border-radius: 50%;
+      box-shadow: 0 0 0.2vw white;
+      margin: 0 1vw;
+      width: 7vw;
+      height: 7vw;
+      object-fit: cover;
+    }
+}
+  
+  .nav{
+    display:flex;
+    justify-content: space-around;
+    margin:1vw;
+    li{
+      list-style: none;
+      padding: 1vw;
+    }
+    &__link{
+      color: black;
+      text-decoration: none;
+    }
+}

@@ -1,0 +1,31 @@
+@keyframes apparition-etudes{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0%;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 100%
+    }
+}
+
+@keyframes apparition-header-info{
+    0%{
+        transform: translateX(-100%);
+    }
+    14%{
+        transform: translateX(-60%);
+    }
+    25%{
+        transform: translateX(-40%);
+    }
+    50%{
+        transform: translateX(-11%);
+    }
+    60%{
+        transform: translateX(-5%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}

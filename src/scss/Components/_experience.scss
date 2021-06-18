@@ -1,0 +1,40 @@
+.exp{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2vw;
+    margin:  2vw;
+    &__emploi{
+        font-size: 1.4em;
+    }
+    &__entreprise{
+        font-size: 0.8em;
+        margin-bottom: 2vw;
+        a{
+            color: $color-tertiary;
+            &:hover{
+                opacity: 50%;
+                transition: 150ms linear;
+            }
+        }
+    }
+    &__date{
+        font-size: 0.9em;
+        text-align: center;
+        margin-bottom: 1.5vw;
+    }
+    li{
+        font-size: 0.8em;
+        margin-left: 2vw;
+        list-style: square inside;
+    }
+    @for $i from 1 through 3{
+        &__#{$i}{
+            background-color: $color-secondary;
+            color: $text-color-secondary;
+            box-shadow: $box-shadow;
+            padding: 1vw 2vw 4vw;
+            border-radius: 1vw;
+            animation: anim 1000ms both;
+        }
+    }
+}

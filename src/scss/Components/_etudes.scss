@@ -1,0 +1,14 @@
+.etudes{
+    @for $i from 1 through 3{
+         &__#{$i}{
+             background-color: $color-secondary;
+             color: $text-color-secondary;
+             padding: 1vw 2vw;
+             margin: 1vw;
+             border-radius: 1vw;
+             box-shadow: $box-shadow;
+             animation: apparition-etudes 1000ms both;
+             animation-delay: $apparition-etudes-delay * $i + $apparition-etudes-start;
+         }
+     }
+}
