@@ -31,7 +31,8 @@ export default {
                   tache: [
                       "Suivi des projets (lancement des  nouveaux produits)",
                       "Gestion des fiches produits dans le logiciel SAP",
-                      "Utilisation de VBA avec Excel"
+                      "Utilisation de VBA avec Excel",
+                      "Création de documents avec Illustrator et Photoshop"
                   ]
               },
               {

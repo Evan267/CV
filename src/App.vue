@@ -1,5 +1,9 @@
 <template>
   <div id="appp">
+    <div class="loader">
+			<div class="loader__spinner">
+			</div>
+		</div>
     <header class="header">
       <div class="header__info">
         <img class="header__img" alt="Vue logo" src="./assets/129503904_374638387162926_3392795190868680163_n.jpg">

@@ -1,0 +1,25 @@
+.loader{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 5;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left:0;
+    height: 100vh;
+    background-color: white;
+    animation: loader 1000ms both;
+    &__spinner{
+        border-radius: 50%;
+        width: 10vh;
+        height: 10vh;
+        margin: auto;
+        border-top: 1vh solid rgba($color-primary, 0.2);
+        border-right: 1vh solid rgba($color-primary, 0.2);
+        border-bottom: 1vh solid rgba($color-primary, 0.2);
+        border-left: 1vh solid $color-primary;
+        animation: loader-spinner 1000ms infinite ease-in-out;
+    }
+}
