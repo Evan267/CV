@@ -19,7 +19,7 @@ export default {
               {
                   intitule: "Formation Developpeur Web",
                   etablissement: "OpenClassroom",
-                  lienEtablissement: "http://www.iut-bm.univ-fcomte.fr/",
+                  lienEtablissement: "https://openclassrooms.com/fr/",
                   periode: "Octobre 2020 - Juin 2021",
                   description: "" 
               },

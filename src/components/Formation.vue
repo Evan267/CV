@@ -21,29 +21,31 @@
             <li>créer, gérer et afficher le contenu d’une base de données.</li>
         </ul>
       </div>
-      <div class="formation__part">
+      <div class="formation__part formation__deroulement">
         <h3>Déroulement de la formation</h3>
         <p>La formation est composée de 7 projets a validé par des livrables puis un oral. Chaque projet doit etre validé pour passer au suivant.</p>
-        <h4>Projets :</h4>
-        <carousel>
-            <carousel-slide v-for="(projet, index) in projets" :key="index">
-                <h5>Projet {{ index + 1 }}: {{  projet.nom }}</h5>
-                <p>{{ projet.description }}</p>
-                <h6>Cours :</h6>
-                <ul>
-                    <li v-for="cours in projet.cours" :key="cours.nomCours"><a :href="cours.lien" target="_blank">{{ cours.nomCours }}</a></li>
-                </ul> 
-                <div v-if="projet.livrables">
-                    <h6>Livrables</h6>
+        <div class="formation__projets">
+            <h4>Projets :</h4>
+            <carousel>
+                <carousel-slide v-for="(projet, index) in projets" :key="index" class="formation__carousel">
+                    <h5>Projet {{ index + 1 }} : {{  projet.nom }}</h5>
+                    <p class="formation__projDescription">{{ projet.description }}</p>
+                    <h6>Cours :</h6>
                     <ul>
-                        <li v-if="projet.livrables.page"><a :href="projet.livrables.page">Page Web héberger sur GitHub</a></li>
-                        <li v-if="projet.livrables.lienGitHub"><a :href="projet.livrables.lienGitHub">Code enregistrer sur GitHub</a></li>
-                        <li v-if="projet.livrables.dossier"><a :href="projet.livrables.dossier">Dossier</a></li>
-                        <li v-if="projet.livrables.frontend"><a :href="projet.livrables.frontend">Frontend du projet</a></li>
-                    </ul>
-                </div>
-            </carousel-slide>
-        </carousel>
+                        <li v-for="cours in projet.cours" :key="cours.nomCours"><a :href="cours.lien" target="_blank">{{ cours.nomCours }}</a></li>
+                    </ul> 
+                    <div v-if="projet.livrables">
+                        <h6>Livrables</h6>
+                        <ul>
+                            <li v-if="projet.livrables.page"><a :href="projet.livrables.page">Page Web héberger sur GitHub</a></li>
+                            <li v-if="projet.livrables.lienGitHub"><a :href="projet.livrables.lienGitHub">Code enregistrer sur GitHub</a></li>
+                            <li v-if="projet.livrables.dossier"><a :href="projet.livrables.dossier">Dossier</a></li>
+                            <li v-if="projet.livrables.frontend"><a :href="projet.livrables.frontend">Frontend du projet</a></li>
+                        </ul>
+                    </div>
+                </carousel-slide>
+            </carousel>
+        </div>
       </div>
     </div>
 </template>
@@ -151,15 +153,3 @@ export default {
   },
 }
 </script>
-
-
-<style lang="scss">
-.formation{
-    &__part{
-        margin: 2vw;
-        ul{
-            margin: 1vw 3vw;
-        }
-    }
-}
-</style>

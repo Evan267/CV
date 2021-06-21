@@ -7,8 +7,25 @@
              margin: 1vw;
              border-radius: 1vw;
              box-shadow: $box-shadow;
-             animation: apparition-etudes 1000ms both;
-             animation-delay: $apparition-etudes-delay * $i + $apparition-etudes-start;
          }
      }
+}
+
+.reveal-visible .etudes{
+    @for $i from 1 through 3{
+        &__#{$i}{
+            animation: apparition-etudes $apparition-etudes-duration both;
+            animation-delay: $apparition-etudes-delay * $i + $apparition-etudes-start;
+            @media print{
+                animation: none;
+            }
+        }
+    }
+}
+
+#etudes{
+    @media print{
+        grid-column: 1;
+        grid-row: 2/4;
+    }
 }

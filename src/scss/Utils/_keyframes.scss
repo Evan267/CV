@@ -1,3 +1,14 @@
+@keyframes apparition-exp{
+    0%{
+        transform: translateY(100%);
+        opacity: 0%;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 100%
+    }
+}
+
 @keyframes apparition-etudes{
     0%{
         transform: translateX(-100%);
@@ -27,5 +38,37 @@
     }
     100%{
         transform: translateX(0);
+    }
+}
+
+@keyframes slideLeftOut {
+    from{
+      transform: translateX(0);
+    }to{
+      transform: translateX(100%);
+    }
+}
+
+@keyframes slideLeftIn {
+    from{
+      transform: translateX(-100%);
+    }to{
+      transform: translateX(0);
+    }
+}
+
+@keyframes slideRightIn {
+    from{
+      transform: translateX(100%);
+    }to{
+      transform: translateX(0);
+    }
+}
+
+@keyframes slideRightOut {
+    from{
+      transform: translateX(0);
+    }to{
+      transform: translateX(-100%);
     }
 }

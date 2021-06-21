@@ -1,0 +1,32 @@
+.slide-right-enter-active{
+    animation: slideRightIn 550ms;
+}
+  
+.slide-right-leave-active{
+    animation: slideRightOut 500ms;
+    position: absolute;
+    border-radius: 1vw;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width:100%;
+}
+  
+.slide-left-enter-active{
+    animation: slideLeftIn 500ms;
+}
+  
+.slide-left-leave-active{
+    animation: slideLeftOut 500ms;
+    position: absolute;
+    border-radius: 1vw;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width:100%;
+}
+  
+  
+  

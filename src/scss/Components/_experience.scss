@@ -3,14 +3,29 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2vw;
     margin:  2vw;
+    @media print{
+        display: flex;
+        flex-direction: column;
+        margin:0;
+        grid-gap: 0;
+    }
+    @media screen and (max-width: 500px){
+        grid-template-columns: 1fr;
+    }
     &__emploi{
         font-size: 1.4em;
     }
     &__entreprise{
         font-size: 0.8em;
         margin-bottom: 2vw;
+        @media print{
+            margin-bottom: 0vw;
+        }
         a{
             color: $color-tertiary;
+            @media print{
+                color: black;
+            }
             &:hover{
                 opacity: 50%;
                 transition: 150ms linear;
@@ -21,6 +36,9 @@
         font-size: 0.9em;
         text-align: center;
         margin-bottom: 1.5vw;
+        @media print{
+            text-align: start;
+        }
     }
     li{
         font-size: 0.8em;
@@ -34,7 +52,32 @@
             box-shadow: $box-shadow;
             padding: 1vw 2vw 4vw;
             border-radius: 1vw;
-            animation: anim 1000ms both;
+            @media print{
+                background-color: transparent;
+                color: black;
+                box-shadow: none;
+                padding: 1vw 2vw 2vw;
+            }
         }
+    }
+}
+
+.reveal-visible .exp{
+    @for $i from 1 through 3{
+        &__#{$i}{
+            animation: apparition-exp $apparition-exp-duration both;
+            animation-delay: $apparition-etudes-delay * $i + $apparition-etudes-start;
+            @media screen and (max-width: 500px){
+                animation: apparition-etudes 1000ms both;
+                animation-delay: $apparition-etudes-delay * $i + $apparition-etudes-start;
+            }
+        }
+    }
+}
+
+#experience{
+    @media print{
+        grid-column: 1;
+        grid-row: 1;
     }
 }

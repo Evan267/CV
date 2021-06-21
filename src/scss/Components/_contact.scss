@@ -1,0 +1,46 @@
+.contact{
+    padding: 1vw 2vw;
+    li{
+        list-style: none;
+        margin: 2vw;
+        @media print{
+            margin: 0vw;
+        }
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        @media print{
+            flex-direction: column;
+        }
+        @media screen and (max-width: 500px){
+            justify-content: space-around;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: $color-primary;
+    }
+    i{
+        font-size: 2.5em;
+    }
+    &__print{
+        display: none;
+        @media print{
+            display: block;
+        }
+    }
+    &__web{
+        @media print{
+            display: none
+        }
+    }
+}
+
+#contact{
+    @media print{
+        grid-column: 2;
+        grid-row: 4/6;
+        background-color: $color-tertiary;
+    }
+}

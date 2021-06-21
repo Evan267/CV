@@ -1,5 +1,5 @@
 <template>
-    <div id="xp" :class="visible">
+    <div id="xp">
       <h2>Experience professionelle</h2>
       <div class="exp">
         <div v-for="(item, index) in expPro" :key="item.emploi" :class="'exp__' + (index + 1) + ' reveal-' + (index + 1)">
@@ -62,8 +62,5 @@ export default {
       };
 
   },
-  props: {
-      visible: String
-  }
 }
 </script>

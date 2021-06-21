@@ -1,0 +1,80 @@
+.formation{
+    &__part{
+        margin: 3vw 2vw;
+        @media print{
+            margin: 1.6vw 2vw;
+        }
+        ul{
+            margin: 0vw 2vw;
+        }
+        li{
+            list-style: square inside;
+        }
+        @media screen and (max-width: 500px){
+            margin: 6vw 4vw;
+        }
+    }
+    &__carousel{
+        background-color: $color-secondary;
+        color: white;
+        height: 25vw;
+        border-radius: 1vw;
+        padding: 2vw 4vw;
+        @media screen and (max-width: 970px){
+            height: 40vw;
+        }
+        @media screen and (max-width: 700px){
+            height: 50vw;
+        }
+        @media screen and (max-width: 500px){
+            height: 120vw;
+            padding: 4vw 8vw;
+        }
+        @media screen and (max-width: 350px){
+            height: 180vw;
+            padding: 4vw 8vw;
+        }
+    }
+    &__projets{
+        @media print{
+            display: none;
+        }
+    }
+    &__deroulement{
+        h4{
+            margin: 2vw 2vw 1vw;
+        }
+        h5{
+            font-size: 1.2em;
+            margin-bottom: 1vw;
+        }
+        h6{
+            font-size: 1em;
+            margin-top: 1vw;
+        }
+        @media screen and (max-width: 500px){
+            h4{
+                margin: 4vw 4vw 2vw;
+            }
+            h5{
+                font-size: 1.4em;
+                margin-bottom: 2vw;
+            }
+            h6{
+                font-size: 1.1em;
+                margin-top: 4vw;
+            }
+        }
+    }
+    &__projDescription{
+        font-size:0.9em;
+        margin-bottom: 3vw;
+    }
+}
+
+#formation{
+    @media print{
+        grid-column: 1;
+        grid-row: 4/6;
+    }
+}

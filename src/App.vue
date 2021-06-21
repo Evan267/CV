@@ -6,6 +6,7 @@
         <div class="header__txt">
           <h1>Evan Berger</h1>
           <p>Developpeur Web</p>
+          <p>(HTML, CSS, JS, Dart, MySQL)</p>
         </div>
       </div>
       <nav>
@@ -28,23 +29,24 @@
         </ul>
       </nav>
     </header>
-    <section id="experience" class="reveal">
-      <Experience></Experience>
-    </section>
-    <section id="etudes" class="reveal">
-      <Etudes></Etudes>
-    </section>
-    <section id="formation" class="reveal">
-      <Formation></Formation>
-    </section>
-    <section id="centredinteret" class="reveal">
-      <CentreDinteret></CentreDinteret>
-    </section>
-    <footer id="contact">
-      <Contact></Contact>
-    </footer>
+    <div class="grid-print">
+      <section id="experience" class="reveal">
+        <Experience></Experience>
+      </section>
+      <section id="etudes" class="reveal">
+        <Etudes></Etudes>
+      </section>
+      <section id="formation" class="reveal">
+        <Formation></Formation>
+      </section>
+      <section id="centredinteret" class="reveal">
+        <CentreDinteret></CentreDinteret>
+      </section>
+      <footer id="contact">
+        <Contact></Contact>
+      </footer>
+    </div>
   </div>
-  
 </template>
 
 <script>
@@ -68,7 +70,7 @@ export default {
   },
   methods: {
     async affichElement(){
-      const ratio = .5;
+      const ratio = .3;
           const options = {
               root: null,
               rootMargin: '0px',
@@ -96,18 +98,4 @@ export default {
 
 <style lang="scss">
 @import "./scss/style.scss";
-
-
-
-
-.reveal{
-  opacity: 0;
-}
-
-.reveal-visible{
-  opacity:1;
-  transition: 1000ms cubic-bezier(.45,0,.35,1);
-}
-
-
 </style>

@@ -1,0 +1,41 @@
+.carousel{
+    position: relative;
+    overflow: hidden;
+    &__nav{
+      position: absolute;
+      color: white;
+      top: 45%;
+      left: 1vw;
+      font-size: 1.5em;
+      background-color: transparent;
+      border:none;
+      &:hover{
+        opacity: 50%;
+        transition: opacity 200ms ease-in-out;
+      }
+    }
+    &__next{
+      right: 1vw;
+      left: auto;
+    }
+    &__pagination{
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      @media screen and (max-width: 500px){
+        display:none;
+      }
+      button{
+        background-color: transparent;
+        border: none;
+        width: 10vw;
+        padding-top: 1vw;
+        padding-bottom: 0.5vw;
+        border-radius: 1vw 1vw 0 0;
+      }
+      button.active{
+        background-color: $color-primary;
+        color: $text-color-secondary;
+      }
+    }
+}
