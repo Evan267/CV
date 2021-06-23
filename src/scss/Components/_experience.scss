@@ -52,24 +52,22 @@
             box-shadow: $box-shadow;
             padding: 1vw 2vw 4vw;
             border-radius: 1vw;
+            animation: apparition-exp $apparition-exp-duration both;
+            animation-delay: $apparition-etudes-delay * $i + $apparition-exp-start;
+            @media screen and (max-width: 900px){
+                border-radius: 2vw;
+            }
+            @media screen and (max-width: 500px){
+                animation: apparition-etudes 1000ms both;
+                animation-delay: $apparition-etudes-delay * $i + $apparition-exp-start;
+                border-radius: 3vw;
+                padding: 4vw 6vw 8vw;
+            }
             @media print{
                 background-color: transparent;
                 color: black;
                 box-shadow: none;
                 padding: 1.4vw 2vw;
-            }
-        }
-    }
-}
-
-.reveal-visible .exp{
-    @for $i from 1 through 3{
-        &__#{$i}{
-            animation: apparition-exp $apparition-exp-duration both;
-            animation-delay: $apparition-etudes-delay * $i + $apparition-exp-start;
-            @media screen and (max-width: 500px){
-                animation: apparition-etudes 1000ms both;
-                animation-delay: $apparition-etudes-delay * $i + $apparition-exp-start;
             }
         }
     }

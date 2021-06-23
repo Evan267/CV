@@ -3,6 +3,9 @@
     background-color: white;
     width:100%;
     margin-bottom: 4vw;
+    @media print{
+      margin-bottom: 2vw;
+    }
     &__info{
       display: flex;
       flex-direction: row-reverse;
@@ -27,6 +30,8 @@
       @media screen and (max-width: 500px){
         width: 95%;
         border-radius: 0 15vw 15vw 0;
+        margin-top: 0vw;
+        margin-bottom: 0vw;
       }
       @media screen and (max-width: 327px){
         width: 97%;
@@ -66,6 +71,8 @@
     display:flex;
     justify-content: space-around;
     margin:1vw;
+    animation: apparition-exp-header 400ms both;
+    animation-delay: 1700ms;
     li{
       list-style: none;
       padding: 1vw;
@@ -73,6 +80,57 @@
     &__link{
       color: black;
       text-decoration: none;
+    }
+    &__mobile{
+      display: none;
+      position: fixed;
+      top:0;
+      left:0;
+      z-index: 10;
+      background-color: $color-tertiary;
+      width: 80%;
+      height: 100%;
+      box-shadow: 0vw 0vw 10vw 0vw black;
+      transform: translateX(-100%);
+      opacity: 0;
+      transition: 300ms ease-in-out;
+      li{
+        font-size: 1.3em;
+        padding: 1em 0;
+        list-style: none;
+        text-align: center;
+        border-bottom: 1px solid black;
+      }
+      button{
+        background-color: transparent;
+        font-size: 1.5em;
+        border: none;
+        padding: 0.5em;
+      }
+      @media screen and (max-width: 500px){
+        display:block;
+      }
+      &--view{
+        @media screen and (max-width: 500px){
+          transform: translateX(0%);
+          opacity: 1;
+          transition: 300ms ease-in-out;
+        }
+      }
+    }
+    &__responsiveButton{
+      display: none;
+      z-index: 3;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 1vw;
+      font-size: 1.8em;
+      background-color: transparent;
+      border:none;
+      margin: 2vw;
+      @media screen and (max-width: 500px){
+        display:block;
+      }
     }
     @media print{
       display:  none;

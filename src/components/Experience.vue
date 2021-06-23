@@ -1,10 +1,10 @@
 <template>
     <div id="xp">
-      <h2>Experience professionelle</h2>
+      <h2><i class="fas fa-hammer"></i> Experience professionelle</h2>
       <div class="exp">
         <div v-for="(item, index) in expPro" :key="item.emploi" :class="'exp__' + (index + 1) + ' reveal-' + (index + 1)">
             <h3 class="exp__emploi">{{ item.emploi }}</h3>
-            <p class="exp__entreprise"><a :href="item.lienEntreprise" target="_blank">{{ item.entreprise }}</a> à <a :href="item.lienGMaps" target="_blank">{{ item.ville }}</a></p>
+            <p class="exp__entreprise"><a :href="item.lienEntreprise" target="_blank">{{ item.entreprise }}</a> à <a :href="item.lienGMaps" target="_blank">{{ item.ville }} <i class="fas fa-map-marker-alt"></i></a></p>
             <p class="exp__date">{{ item.periode }}</p>
             <h4>Tâches</h4>
             <ul>

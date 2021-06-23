@@ -29,6 +29,14 @@
         @media print{
             display: block;
         }
+        img{
+            width: 15vw;
+            height: 15vw;
+            margin: 1vw 2vw;
+        }
+        li{
+            margin: 1vw 2vw;
+        }
     }
     &__web{
         @media print{

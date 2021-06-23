@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Lora';
+    font-family: 'Raleway';
 }
   
   
@@ -11,6 +11,12 @@ h1, h2{
   
 h2{
     text-transform: uppercase;
+    i{
+        color:$color-primary;
+        font-size: 1.5em;
+        padding: 0.5em;
+        padding-left: 0;
+    }
 }
   
 h3{
@@ -34,6 +40,10 @@ section{
 .reveal-visible{
     opacity:1;
     transition: 600ms cubic-bezier(.45,0,.35,1);
+    &-exp{
+        animation: apparition-exp-header 400ms both;
+        animation-delay: $apparition-exp-start;
+    }
 }
 
 button, a{
@@ -48,6 +58,11 @@ a{
     color: $color-tertiary;
     @media print{
         text-decoration: none;
+    }
+    i{
+        @media print{
+            opacity: 0;
+        }
     }
 }
 
@@ -71,5 +86,14 @@ body{
     }
     @media screen and (min-width: 2000px){
         font-size:1.6em;
+    }
+    @media screen and (max-width: 500px){
+        font-size:0.9em;
+    }
+    @media screen and (max-width: 397px){
+        font-size:0.8em;
+    }
+    @media screen and (max-width: 352px){
+        font-size:0.7em;
     }
 }

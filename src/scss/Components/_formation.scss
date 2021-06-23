@@ -22,17 +22,15 @@
         padding: 2vw 4vw;
         @media screen and (max-width: 970px){
             height: 40vw;
+            border-radius: 2vw;
         }
         @media screen and (max-width: 700px){
             height: 50vw;
         }
         @media screen and (max-width: 500px){
-            height: 120vw;
+            height: 100vw;
             padding: 4vw 8vw;
-        }
-        @media screen and (max-width: 350px){
-            height: 180vw;
-            padding: 4vw 8vw;
+            border-radius: 3vw;
         }
     }
     &__projets{

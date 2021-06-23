@@ -9,6 +9,15 @@
     }
 }
 
+@keyframes apparition-exp-header{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 @keyframes apparition-etudes{
     0%{
         transform: translateX(-100%);

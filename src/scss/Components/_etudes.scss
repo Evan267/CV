@@ -7,6 +7,13 @@
              margin: 1vw;
              border-radius: 1vw;
              box-shadow: $box-shadow;
+             @media screen and (max-width: 900px){
+                border-radius: 2vw;
+            }
+            @media screen and (max-width: 500px){
+                border-radius: 3vw;
+                padding: 3vw 6vw;
+            }
          }
      }
 }

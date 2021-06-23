@@ -1,11 +1,17 @@
 .interet{
     &__part{
         margin: 3vw 2vw;
+        @media print{
+            margin: 1vw 2vw;
+        }
         ul{
             margin: 0vw 2vw;
         }
         li{
             list-style: square inside;
+            @media print{
+                font-size: 0.9em;
+            }
         }
         a{
             color: $color-primary;
@@ -16,9 +22,7 @@
 #centredinteret{
     @media print{
         grid-column: 2;
-        grid-row: 1/4;
-    }
-    @media print{
+        grid-row: 2;
         background-color: $color-tertiary;
     }
 }

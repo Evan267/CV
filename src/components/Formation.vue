@@ -1,6 +1,6 @@
 <template>
     <div class="formation">
-      <h2>Formation Developpeur Web</h2>
+      <h2><i class="fas fa-code"></i> Formation Developpeur Web</h2>
       <div class="formation__part">
         <h3>Etablissement</h3>
         <p>OpenClassrooms est un établissement privé d'enseignement à distance déclaré au rectorat de l'Académie de Paris.</p>

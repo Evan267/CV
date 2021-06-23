@@ -1,9 +1,9 @@
 <template>
     <div class="etudes">
-      <h2>Études</h2>
+      <h2><i class="fas fa-user-graduate"></i> Études</h2>
       <div v-for="(item, index) in etudes" :key="item.intitule" :class="'etudes__' + (index+1)">
           <h3>{{ item.intitule }}</h3>
-          <p><a :href="item.lienEtablissement" target="_blank">{{ item.etablissement }}</a><span v-if="item.ville"> à <a :href="item.lienGMaps" target="_blank">{{ item.ville }}</a></span></p>
+          <p><a :href="item.lienEtablissement" target="_blank">{{ item.etablissement }}</a><span v-if="item.ville"> à <a :href="item.lienGMaps" target="_blank">{{ item.ville }}  <i class="fas fa-map-marker-alt"></i></a></span></p>
           <p>{{ item.periode }}</p>
           <p>{{ item.description }}</p>
       </div>
