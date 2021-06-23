@@ -6,6 +6,9 @@
         @media print{
             margin: 0vw;
         }
+        @media screen and (max-width: 500px){
+            margin: 7vw;
+        }
     }
     ul{
         display: flex;
@@ -30,8 +33,7 @@
             display: block;
         }
         img{
-            width: 15vw;
-            height: 15vw;
+            width: 18vw;
             margin: 1vw 2vw;
         }
         li{

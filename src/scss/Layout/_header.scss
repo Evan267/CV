@@ -5,6 +5,7 @@
     margin-bottom: 4vw;
     @media print{
       margin-bottom: 1.95vw;
+      box-shadow: none;
     }
     &__info{
       display: flex;
@@ -45,6 +46,9 @@
       width: 7vw;
       height: 7vw;
       object-fit: cover;
+      @media print{
+        box-shadow: none;
+      }
       @media screen and (max-width: 970px){
         width: 9vw;
         height: 9vw;
@@ -63,7 +67,7 @@
     }
     @media screen and (max-width: 500px){
       box-shadow: none;
-      margin-bottom: 15vw;
+      margin-bottom: 8vw;
     }
 }
   

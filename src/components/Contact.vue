@@ -13,7 +13,7 @@
           <li>Numéro de tel : 06 60 34 66 13</li>
           <li>email : evan.berger@outlook.com</li>
           <li>CV web : <br>
-            <img src="../assets/QRcode.png" alt="QR code du CV web">
+            <img src="../assets/QRcode.svg" alt="QR code du CV web">
           </li>
         </ul>
       </div>

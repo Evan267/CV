@@ -7,6 +7,9 @@
              margin: 1vw;
              border-radius: 1vw;
              box-shadow: $box-shadow;
+             @media print{
+                box-shadow: none;
+              }
              @media screen and (max-width: 900px){
                 border-radius: 2vw;
             }
