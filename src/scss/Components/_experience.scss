@@ -3,17 +3,17 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2vw;
     margin:  2vw;
-    @media print{
-        display: flex;
-        flex-direction: column;
-        margin:0;
-        grid-gap: 0;
-    }
     @media screen and (max-width: 500px){
         grid-template-columns: 1fr;
     }
+    @media print{
+        font-size: 0.9em;
+    }
     &__emploi{
         font-size: 1.4em;
+        @media print{
+            font-size: 1.1em;
+        }
     }
     &__entreprise{
         font-size: 0.8em;
@@ -37,7 +37,7 @@
         text-align: center;
         margin-bottom: 1.5vw;
         @media print{
-            text-align: start;
+            margin-bottom: 0.5vw;
         }
     }
     li{
@@ -52,22 +52,37 @@
             box-shadow: $box-shadow;
             padding: 1vw 2vw 4vw;
             border-radius: 1vw;
-            animation: apparition-exp $apparition-exp-duration both;
-            animation-delay: $apparition-etudes-delay * $i + $apparition-exp-start;
+            a{
+                @media print{
+                    color: white;
+                }
+            }
             @media screen and (max-width: 900px){
                 border-radius: 2vw;
             }
             @media screen and (max-width: 500px){
-                animation: apparition-etudes 1000ms both;
-                animation-delay: $apparition-etudes-delay * $i + $apparition-exp-start;
                 border-radius: 3vw;
                 padding: 4vw 6vw 8vw;
             }
             @media print{
-                background-color: transparent;
-                color: black;
                 box-shadow: none;
-                padding: 1.4vw 2vw;
+                padding: 1.1vw 2vw;
+            }
+        }
+    }
+}
+
+.reveal-visible .exp{
+    @for $i from 1 through 3{
+        &__#{$i}{
+            animation: apparition-exp $apparition-exp-duration both;
+            animation-delay: $apparition-etudes-delay * $i + $apparition-exp-start;
+            @media print{
+                animation: none;
+            }
+            @media screen and (max-width: 500px){
+                animation: apparition-etudes 1000ms both;
+                animation-delay: $apparition-etudes-delay * $i + $apparition-exp-start;
             }
         }
     }
@@ -75,7 +90,7 @@
 
 #experience{
     @media print{
-        grid-column: 1;
-        grid-row: 1;
+        grid-column: 2;
+        grid-row: 11/15;
     }
 }

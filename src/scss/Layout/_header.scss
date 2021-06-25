@@ -4,7 +4,7 @@
     width:100%;
     margin-bottom: 4vw;
     @media print{
-      margin-bottom: 1.95vw;
+      margin-bottom: 0vw;
       box-shadow: none;
     }
     &__info{
@@ -20,6 +20,9 @@
       padding: 1vw 0;
       animation: apparition-header-info 600ms both;
       animation-delay: 1400ms;
+      @media print{
+        margin-bottom: 0vw;
+      }
       @media screen and (max-width: 970px){
         width: 50%;
         border-radius: 0 5vw 5vw 0;
@@ -75,7 +78,7 @@
     display:flex;
     justify-content: space-around;
     margin:1vw;
-    animation: apparition-exp-header 400ms both;
+    animation: apparition-etudes-header 400ms both;
     animation-delay: 1700ms;
     li{
       list-style: none;

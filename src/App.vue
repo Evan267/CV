@@ -5,13 +5,13 @@
       <nav>
         <ul>
           <li>
-            <a href="#experience" class="nav__link" v-on:click="CacherNavBar()">Expérience professionelle</a>
-          </li>
-          <li>
             <a href="#etudes" class="nav__link" v-on:click="CacherNavBar()">Études</a>
           </li>
           <li>
             <a href="#formation" class="nav__link" v-on:click="CacherNavBar()">Formation Developpeur Web</a>
+          </li>
+          <li>
+            <a href="#experience" class="nav__link" v-on:click="CacherNavBar()">Expérience professionelle</a>
           </li>
           <li>
             <a href="#centredinteret" class="nav__link" v-on:click="CacherNavBar()">Centre d'interet</a>
@@ -33,20 +33,20 @@
           <img class="header__img" alt="Vue logo" src="./assets/129503904_374638387162926_3392795190868680163_n.jpg">
           <div class="header__txt">
             <h1>Evan Berger</h1>
-            <p>Developpeur Web</p>
+            <p>Developpeur Web en CDI/CDD</p>
             <p>(HTML, CSS, JS, Dart, MySQL)</p>
           </div>
         </div>
         <nav>
           <ul class="nav">
             <li>
-              <a href="#experience" class="nav__link">Expérience professionelle</a>
-            </li>
-            <li>
               <a href="#etudes" class="nav__link">Études</a>
             </li>
             <li>
               <a href="#formation" class="nav__link">Formation Developpeur Web</a>
+            </li>
+            <li>
+              <a href="#experience" class="nav__link">Expérience professionelle</a>
             </li>
             <li>
               <a href="#centredinteret" class="nav__link">Centre d'interet</a>
@@ -58,20 +58,20 @@
         </nav>
       </header>
       <div class="grid-print" v-on:click="CacherNavBar()">
-        <section id="experience" class="reveal-visible-exp">
-          <Experience></Experience>
-        </section>
-        <section id="etudes" class="reveal">
+        <section id="etudes" class="reveal-visible-etudes">
           <Etudes></Etudes>
         </section>
         <section id="formation" class="reveal">
           <Formation></Formation>
         </section>
+        <section id="experience" class="reveal">
+          <Experience></Experience>
+        </section>
         <section id="centredinteret" class="reveal">
           <CentreDinteret></CentreDinteret>
         </section>
-        <section id="logiciel" class="reveal">
-          <Logiciel></Logiciel>
+        <section id="competence" class="reveal">
+          <Competence></Competence>
         </section>
         <footer id="contact">
           <Contact></Contact>
@@ -87,7 +87,7 @@ import Experience from "./components/Experience"
 import Etudes from "./components/Etudes"
 import Formation from "./components/Formation"
 import CentreDinteret from "./components/CentreDinteret"
-import Logiciel from "./components/Logiciel"
+import Competence from "./components/Competence"
 import Contact from "./components/Contact"
 
 
@@ -98,7 +98,7 @@ export default {
     Etudes,
     Formation,
     CentreDinteret,
-    Logiciel,
+    Competence,
     Contact
   },
   mounted(){
@@ -114,7 +114,7 @@ export default {
       element.classList.add('nav__mobile--view');
     },
     async AffichElement(){
-      const ratio = .35;
+      const ratio = .4;
       const options = {
           root: null,
           rootMargin: '0px',

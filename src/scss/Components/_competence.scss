@@ -1,0 +1,164 @@
+.competence{
+    &__dev{
+        display: grid;
+        grid-template-columns: repeat(3, 32%);
+        @media print{
+            display: block;
+        }
+        @media screen and (max-width:1020px){
+            grid-template-columns: repeat(2, 45%);
+            font-size:1.1em;
+        }
+        @media screen and (max-width:500px){
+            grid-template-columns: 1fr;
+            font-size:1.2em;
+        }
+    }
+    &__part{
+        padding: 1vw 0;
+        margin: 1vw;
+        @media print{
+            margin: 0vw 1vw;
+        }
+        h4{
+            margin: 1vw 1.5vw 0vw;
+            @media print{
+                margin: 0vw 1vw;
+            }
+            @media screen and (max-width:500px){
+                margin: 3vw 1.5vw 0vw;
+            }
+        }
+        ul{
+            margin: 0vw 3vw;
+        }
+        li{
+            list-style: square inside;
+        }
+    }
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(2,40%);
+        grid-row-gap: 1vw;
+        grid-column-gap: 5vw;
+        margin: 1vw 2vw;
+        @media print{
+            margin: 0vw 1vw;
+            grid-column-gap: 3vw;
+        }
+    }
+    &__6{
+        @media print{
+            display: none;
+        }
+    }
+    &__note{
+        display: flex;
+    }
+    &__soft{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        h3{
+            margin: 2vw 3vw 0vw;
+            font-size: 1.5em;
+            width: 100%;
+            @media print{
+                margin: 1vw;
+            }
+        }
+    }
+    &__softSkills{
+        background-color: $color-primary;
+        width: 10vw;
+        border-radius: 1vw;
+        box-shadow: $box-shadow;
+        margin: 1vw 2vw;
+        padding: 2vw;
+        color: white;
+        text-align: center;
+        @media print{
+            width: 5vw;
+            padding: 1vw;
+            margin: 0.5vw;
+        }
+        i{
+            font-size:5em;
+            @media print{
+                font-size:2em;
+            }
+        }
+        p{
+            margin-top: 2vw;
+            @media print{
+                font-size:0.9em;
+            }
+        }
+        @media screen and (max-width:1020px){
+            width: 20vw;
+        }
+        @media screen and (max-width:500px){
+            width: 20vw;
+            padding: 4vw;
+        }
+    }
+}
+
+.circle{
+    width:1vw;
+    height: 1vw;
+    margin: 0 0.1vw;
+    border-radius: 50%;
+    border: 1px solid $color-primary;
+    &__full{
+        background-color: $color-primary;
+    }
+    @media screen and (max-width:1020px){
+        width:1.8vw;
+        height: 1.8vw;
+        margin: 0 0.2vw;
+    }
+    @media screen and (max-width:500px){
+        width:3vw;
+        height: 3vw;
+        margin: 0 0.4vw;
+    }
+}
+
+.reveal-visible .competence{
+    @for $i from 1 through 6{
+        &__#{$i}{
+            animation: apparition-exp $apparition-exp-duration both;
+            animation-delay: $apparition-etudes-delay * $i + $apparition-exp-start;
+            @media print{
+                animation: none;
+            }
+            @media screen and (max-width: 500px){
+                animation: apparition-etudes 1000ms both;
+                animation-delay: $apparition-etudes-delay * $i + $apparition-exp-start;
+            }
+        }
+    }
+    &__soft{
+        animation: apparition-etudes-header $apparition-exp-duration both;
+        animation-delay: 2600ms;
+        &Skills{
+            @for $i from 1 through 3{
+                &#{$i}{
+                    animation: apparition-exp $apparition-exp-duration both;
+                    animation-delay: $apparition-etudes-delay * $i + 2600ms;
+                }
+            }
+        }
+    }
+}
+
+
+
+#competence{
+    @media print{
+        grid-column: 1;
+        grid-row: 8/15;
+        background-color: $color-tertiary;
+    }
+}

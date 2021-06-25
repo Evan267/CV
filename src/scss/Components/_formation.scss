@@ -1,4 +1,14 @@
 .formation{
+    &__projetsPrint{
+        display: none;
+        @media print{
+            display: block;
+        }
+        p{
+            margin: 0;
+            padding:0
+        }
+    }
     &__part{
         margin: 3vw 2vw;
         @media print{
@@ -45,6 +55,10 @@
         h5{
             font-size: 1.2em;
             margin-bottom: 1vw;
+            @media print{
+                margin: 1vw 4vw 0;
+                font-size: 1.0em;
+            }
         }
         h6{
             font-size: 1em;
@@ -72,7 +86,7 @@
 
 #formation{
     @media print{
-        grid-column: 1;
-        grid-row: 4/6;
+        grid-column: 2;
+        grid-row: 4/11;
     }
 }

@@ -46,6 +46,13 @@
                 </carousel-slide>
             </carousel>
         </div>
+        <div class="formation__projetsPrint">
+            <h4>Projets (voir CV web pour le detail) :</h4>
+            <div v-for="(projet, index) in projets" :key="index">
+                <h5 class="formation__headersPrint">Projet {{ index + 1 }} : {{  projet.nom }}</h5>
+                <p>{{ projet.description }}</p>
+            </div>
+        </div>
       </div>
     </div>
 </template>

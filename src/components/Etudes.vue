@@ -17,7 +17,7 @@ export default {
       return {
           etudes: [
               {
-                  intitule: "Formation Developpeur Web",
+                  intitule: "Formation Developpeur Web (équivalent BAC+2)",
                   etablissement: "OpenClassroom",
                   lienEtablissement: "https://openclassrooms.com/fr/",
                   periode: "Octobre 2020 - Juin 2021",

@@ -10,9 +10,10 @@
       </div>
       <div class="contact__print">
         <ul>
-          <li>Numéro de tel : 06 60 34 66 13</li>
-          <li>email : evan.berger@outlook.com</li>
-          <li>CV web : <br>
+          <li><i class="fas fa-mobile"></i> 06 60 34 66 13</li>
+          <li><i class="fas fa-at"></i> evan.berger@outlook.com</li>
+          <li>CV web<br>
+            <p>https://evan-bergercv.netlify.app/</p>
             <img src="../assets/QRcode.svg" alt="QR code du CV web">
           </li>
         </ul>
