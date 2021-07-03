@@ -47,11 +47,6 @@
             grid-column-gap: 3vw;
         }
     }
-    &__6{
-        @media print{
-            display: none;
-        }
-    }
     &__note{
         display: flex;
     }
@@ -65,6 +60,7 @@
             width: 100%;
             @media print{
                 margin: 1vw;
+                text-transform: uppercase;
             }
         }
     }
@@ -78,7 +74,7 @@
         color: white;
         text-align: center;
         @media print{
-            width: 5vw;
+            width: 5.5vw;
             padding: 1vw;
             margin: 0.5vw;
         }
@@ -91,7 +87,7 @@
         p{
             margin-top: 2vw;
             @media print{
-                font-size:0.9em;
+                font-size:0.8em;
             }
         }
         @media screen and (max-width:1020px){
@@ -143,7 +139,7 @@
         animation: apparition-etudes-header $apparition-exp-duration both;
         animation-delay: 2600ms;
         &Skills{
-            @for $i from 1 through 3{
+            @for $i from 1 through 5{
                 &#{$i}{
                     animation: apparition-exp $apparition-exp-duration both;
                     animation-delay: $apparition-etudes-delay * $i + 2600ms;
@@ -158,7 +154,7 @@
 #competence{
     @media print{
         grid-column: 1;
-        grid-row: 8/15;
-        background-color: $color-tertiary;
+        grid-row: 6/15;
+        border-right: 2px solid $color-primary;
     }
 }

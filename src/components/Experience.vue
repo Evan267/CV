@@ -1,15 +1,17 @@
 <template>
     <div id="xp">
-      <h2><i class="fas fa-hammer"></i> Experience professionelle</h2>
+      <h2><i class="fas fa-hammer"></i> Expérience professionnelle</h2>
       <div class="exp">
         <div v-for="(item, index) in expPro" :key="item.emploi" :class="'exp__' + (index + 1) + ' reveal-' + (index + 1)">
             <p class="exp__date">{{ item.periode }}</p>
-            <h3 class="exp__emploi">{{ item.emploi }}</h3>
-            <p class="exp__entreprise"><a :href="item.lienEntreprise" target="_blank">{{ item.entreprise }}</a> à <a :href="item.lienGMaps" target="_blank">{{ item.ville }} <i class="fas fa-map-marker-alt"></i></a></p>
-            <h4>Tâches</h4>
-            <ul>
-                <li v-for="tache in item.tache" :key="tache">{{ tache }}</li>
-            </ul>
+            <div class="exp__card">
+                <h3 class="exp__emploi">{{ item.emploi }}</h3>
+                <p class="exp__entreprise"><a :href="item.lienEntreprise" target="_blank">{{ item.entreprise }}</a> à <a :href="item.lienGMaps" target="_blank">{{ item.ville }} <i class="fas fa-map-marker-alt"></i></a></p>
+                <h4>Tâches</h4>
+                <ul>
+                    <li v-for="tache in item.tache" :key="tache">{{ tache }}</li>
+                </ul>
+            </div>
         </div>
       </div>
     </div>
@@ -32,7 +34,8 @@ export default {
                       "Suivre des projets (lancement des  nouveaux produits)",
                       "Gérer des fiches produits dans le logiciel SAP",
                       "Utiliser VBA avec Excel",
-                      "Créer des documents avec Illustrator et Photoshop"
+                      "Créer des documents avec Illustrator",
+                      "Télétravail"
                   ]
               },
               {
@@ -41,7 +44,7 @@ export default {
                   lienEntreprise: "https://www.sharp.fr/fr",
                   ville: "Soultz",
                   lienGMaps: "https://www.google.fr/maps/place/Sharp+Manufacturing+France/@47.8757444,7.2419335,17z/data=!3m1!4b1!4m5!3m4!1s0x479178ceeec02303:0xed3809e79b7bbbc2!8m2!3d47.8757408!4d7.2441222",
-                  periode: "Decembre  2018",
+                  periode: "Décembre  2018",
                   tache: [
                       "Gérer des réceptions, de la démarque et de la production dans SAP"
                   ]

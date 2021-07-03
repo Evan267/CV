@@ -3,16 +3,16 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2vw;
     margin:  2vw;
+    @media print{
+        font-size: 1.1em;
+    }
     @media screen and (max-width: 500px){
         grid-template-columns: 1fr;
-    }
-    @media print{
-        font-size: 0.9em;
     }
     &__emploi{
         font-size: 1.4em;
         @media print{
-            font-size: 1.1em;
+            font-size: 1.2em;
         }
     }
     &__entreprise{
@@ -40,41 +40,42 @@
             margin-bottom: 0.5vw;
         }
     }
+    &__card{
+        background-color: $color-secondary;
+        color: $text-color-secondary;
+        box-shadow: $box-shadow;
+        padding: 1vw 2vw 4vw;
+        border-radius: 1vw;
+        a{
+            @media print{
+                color: white;
+            }
+        }
+        @media screen and (max-width: 900px){
+            border-radius: 2vw;
+        }
+        @media screen and (max-width: 500px){
+            border-radius: 3vw;
+            padding: 4vw 6vw 8vw;
+        }
+        @media print{
+            box-shadow: none;
+            padding: 1.1vw 2vw;
+            height: 100%;
+        }
+    }
     li{
         font-size: 0.8em;
         margin-left: 2vw;
         list-style: square inside;
-    }
-    @for $i from 1 through 3{
-        &__#{$i}{
-            background-color: $color-secondary;
-            color: $text-color-secondary;
-            box-shadow: $box-shadow;
-            padding: 1vw 2vw 4vw;
-            border-radius: 1vw;
-            a{
-                @media print{
-                    color: white;
-                }
-            }
-            @media screen and (max-width: 900px){
-                border-radius: 2vw;
-            }
-            @media screen and (max-width: 500px){
-                border-radius: 3vw;
-                padding: 4vw 6vw 8vw;
-            }
-            @media print{
-                box-shadow: none;
-                padding: 1.1vw 2vw;
-            }
-        }
     }
 }
 
 .reveal-visible .exp{
     @for $i from 1 through 3{
         &__#{$i}{
+            display: grid;
+            grid-template-rows: 10% 90%;
             animation: apparition-exp $apparition-exp-duration both;
             animation-delay: $apparition-etudes-delay * $i + $apparition-exp-start;
             @media print{
@@ -91,6 +92,6 @@
 #experience{
     @media print{
         grid-column: 2;
-        grid-row: 11/15;
+        grid-row: 3/8;
     }
 }

@@ -14,7 +14,7 @@
             <a href="#experience" class="nav__link" v-on:click="CacherNavBar()">Expérience professionelle</a>
           </li>
           <li>
-            <a href="#centredinteret" class="nav__link" v-on:click="CacherNavBar()">Centre d'interet</a>
+            <a href="#competence" class="nav__link" v-on:click="CacherNavBar()">Compétences</a>
           </li>
           <li>
             <a href="#contact" class="nav__link" v-on:click="CacherNavBar()">Contact</a>
@@ -33,7 +33,7 @@
           <img class="header__img" alt="Vue logo" src="./assets/129503904_374638387162926_3392795190868680163_n.jpg">
           <div class="header__txt">
             <h1>Evan Berger</h1>
-            <p>Developpeur Web en CDI/CDD</p>
+            <p>Développeur Web en CDI/CDD</p>
             <p>(HTML, CSS, JS, Dart, MySQL)</p>
           </div>
         </div>
@@ -49,7 +49,7 @@
               <a href="#experience" class="nav__link">Expérience professionelle</a>
             </li>
             <li>
-              <a href="#centredinteret" class="nav__link">Centre d'interet</a>
+              <a href="#competence" class="nav__link">Compétences</a>
             </li>
             <li>
               <a href="#contact" class="nav__link">Contact</a>
@@ -67,11 +67,11 @@
         <section id="experience" class="reveal">
           <Experience></Experience>
         </section>
-        <section id="centredinteret" class="reveal">
-          <CentreDinteret></CentreDinteret>
-        </section>
         <section id="competence" class="reveal">
           <Competence></Competence>
+        </section>
+        <section id="centredinteret" class="reveal">
+          <CentreDinteret></CentreDinteret>
         </section>
         <footer id="contact">
           <Contact></Contact>

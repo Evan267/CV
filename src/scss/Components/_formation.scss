@@ -1,9 +1,9 @@
 .formation{
+    @media print{
+        display: none;
+    }
     &__projetsPrint{
         display: none;
-        @media print{
-            display: block;
-        }
         p{
             margin: 0;
             padding:0
@@ -11,9 +11,6 @@
     }
     &__part{
         margin: 3vw 2vw;
-        @media print{
-            margin: 1.6vw 2vw;
-        }
         ul{
             margin: 0vw 2vw;
         }
@@ -22,6 +19,11 @@
         }
         @media screen and (max-width: 500px){
             margin: 6vw 4vw;
+        }
+    }
+    &__other{
+        a{
+            color: $color-primary;
         }
     }
     &__carousel{
@@ -43,11 +45,6 @@
             border-radius: 3vw;
         }
     }
-    &__projets{
-        @media print{
-            display: none;
-        }
-    }
     &__deroulement{
         h4{
             margin: 2vw 2vw 1vw;
@@ -55,10 +52,6 @@
         h5{
             font-size: 1.2em;
             margin-bottom: 1vw;
-            @media print{
-                margin: 1vw 4vw 0;
-                font-size: 1.0em;
-            }
         }
         h6{
             font-size: 1em;
@@ -84,9 +77,30 @@
     }
 }
 
+.formationPrint{
+    display: none;
+    @media print{
+        display: block;
+    }
+    h3{
+        margin: 3vw 3vw 2vw;
+        font-size: 1.3em;
+    }
+    h4{
+        font-size: 1.2em;
+        margin: 1vw 4vw 0.5vw;
+    }
+    &__livrables{
+        margin: 0.5vw 2vw 0vw;
+        li{
+            list-style: square inside;
+        }
+    }
+}
+
 #formation{
     @media print{
         grid-column: 2;
-        grid-row: 4/11;
+        grid-row: 8/15;
     }
 }

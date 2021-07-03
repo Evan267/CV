@@ -48,17 +48,9 @@
       </div>
       <div class="competence__soft">
           <h3>Soft Skills</h3>
-          <div class="competence__softSkills competence__softSkills1">
-              <i class="fas fa-users"></i>
-              <p>Esprit d'équipe</p>
-          </div>
-          <div class="competence__softSkills competence__softSkills2">
-              <i class="fas fa-hourglass-half"></i>
-              <p>Rigueur</p>
-          </div>
-          <div class="competence__softSkills competence__softSkills3">
-              <i class="far fa-clock"></i>
-              <p>Ponctualité</p>
+          <div v-for="(softSkill, index) in softSkills" :key="softSkill.nom" :class="'competence__softSkills competence__softSkills' + (index + 1)">
+              <i :class="softSkill.icon"></i>
+              <p>{{ softSkill.nom }}</p>
           </div>
       </div>
     </div>
@@ -69,6 +61,28 @@ export default {
   name: 'Logiciel',
   data () {
       return{
+          softSkills: [
+              {
+                  nom: "Esprit d'équipe",
+                  icon: "fas fa-users"
+              },
+              {
+                  nom: "Rigueur",
+                  icon: "fas fa-hourglass-half"
+              },
+              {
+                  nom: "Ponctualité",
+                  icon: "far fa-clock"
+              },
+              {
+                  nom: "Autonome",
+                  icon: "fas fa-user"
+              },
+              {
+                  nom: "Adaptabilité",
+                  icon: "fas fa-tools"
+              },
+          ],
           competences: [
               {
                   titre: 'Langages',
@@ -122,7 +136,7 @@ export default {
                   ],
               },
               {
-                  titre:  'Bases de données',
+                  titre:  'Base de données',
                   tableau:[
                     {
                         nom: 'MySQL',
@@ -159,11 +173,11 @@ export default {
                   titre:  'Logiciels',
                   tableau:[
                     {
-                        nom: 'Visual Studio Code',
+                        nom: 'VS Code',
                         maitrise: 3
                     },
                     {
-                        nom: 'Adobe Illustrator',
+                        nom: 'Illustrator',
                         maitrise: 3
                     },
                     {

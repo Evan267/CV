@@ -1,28 +1,22 @@
 .interet{
-    &__part{
+    ul{
         margin: 3vw 2vw;
         @media print{
             margin: 1vw 2vw;
         }
-        ul{
-            margin: 0vw 2vw;
-        }
-        li{
-            list-style: square inside;
-            @media print{
-                font-size: 0.9em;
-            }
-        }
-        a{
-            color: $color-primary;
-        }
+    }
+    li{
+        list-style: square inside;
+    }
+    a{
+        color: $color-primary;
     }
 }
 
 #centredinteret{
     @media print{
         grid-column: 1;
-        grid-row: 3/8;
-        background-color: $color-tertiary;
+        grid-row: 2/6;
+        border-right: 2px solid $color-primary;
     }
 }
