@@ -29,13 +29,16 @@
       </div>
       <button class="nav__responsiveButton" v-on:click="AffichNavBar()"><i class="fas fa-bars"></i></button>
       <header class="header" v-on:click="CacherNavBar()">
-        <div class="header__info">
-          <img class="header__img" alt="Vue logo" src="./assets/129503904_374638387162926_3392795190868680163_n.jpg">
-          <div class="header__txt">
-            <h1>Evan Berger</h1>
-            <p>Développeur Web en CDI/CDD</p>
-            <p>(HTML, CSS, JS, Dart, MySQL)</p>
+        <div class="header__print">
+          <div class="header__info">
+            <img class="header__img" alt="Vue logo" src="./assets/129503904_374638387162926_3392795190868680163_n.jpg">
+            <div class="header__txt">
+              <h1>Evan Berger</h1>
+              <p>Développeur Web en CDI/CDD</p>
+              <p>(HTML, CSS, JS, Dart, MySQL)</p>
+            </div>
           </div>
+          <p>Jeune, passionné et curieux, je suis à la recherche d'une première expérience en tant que Développeur Web. Mon objectif principal est de continuellement m'améliorer et apprendre afin de devenir de plus en plus efficace dans ma pratique.</p>
         </div>
         <nav>
           <ul class="nav">

@@ -83,18 +83,31 @@
         display: block;
     }
     h3{
-        margin: 3vw 3vw 2vw;
-        font-size: 1.3em;
+        margin: 3vw 3vw 1vw;
+        font-size: 1.2em;
+    }
+    &__reverse{
+        display:flex;
+        flex-direction: column-reverse;
     }
     h4{
-        font-size: 1.2em;
-        margin: 1vw 4vw 0.5vw;
+        font-size: 1.1em;
+        margin: 0vw 2vw 0.5vw;
     }
-    &__livrables{
-        margin: 0.5vw 2vw 0vw;
-        li{
-            list-style: square inside;
-        }
+    &__card{
+        background-color: $color-secondary;
+        color: $text-color-secondary;
+        padding: 0.5vw 2vw;
+        margin: 0.5vw;
+        border-radius: 1vw;
+    }
+    &__project{
+        display: grid;
+        grid-template-columns: 20% 80%;
+    }
+    &__date{
+        margin: auto 0;
+        text-align: center;
     }
 }
 
