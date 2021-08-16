@@ -82,8 +82,11 @@
     @media print{
         display: block;
     }
+    &__1{
+        display: none;
+    }
     h3{
-        margin: 3vw 3vw 1vw;
+        margin: 0vw 3vw 1vw;
         font-size: 1.2em;
     }
     &__reverse{
@@ -97,23 +100,14 @@
     &__card{
         background-color: $color-secondary;
         color: $text-color-secondary;
-        padding: 0.5vw 2vw;
-        margin: 0.5vw;
+        padding: 0.9vw 1vw;
+        margin: 1vw 0vw;
         border-radius: 1vw;
-    }
-    &__project{
-        display: grid;
-        grid-template-columns: 20% 80%;
-    }
-    &__date{
-        margin: auto 0;
-        text-align: center;
     }
 }
 
 #formation{
     @media print{
-        grid-column: 2;
-        grid-row: 8/15;
+        display: none;
     }
 }

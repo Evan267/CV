@@ -1,6 +1,10 @@
 <template>
     <div id="xp">
       <h2><i class="fas fa-hammer"></i> Expérience professionnelle</h2>
+      <div class="exp__print">
+          <Formation></Formation>
+          <h3>Emplois</h3>
+      </div>
       <div class="exp">
         <div v-for="(item, index) in expPro" :key="item.emploi" :class="'exp__' + (index + 1) + ' reveal-' + (index + 1)">
             <p class="exp__date">{{ item.periode }}</p>
@@ -18,8 +22,13 @@
 </template>
 
 <script>
+import Formation from "./Formation"
+
 export default {
   name: 'Experience',
+  components: {
+      Formation
+  },
   data() {
       return {
           expPro: [
@@ -55,9 +64,9 @@ export default {
                   lienGMaps: "https://www.google.fr/maps/place/Sharp+Manufacturing+France/@47.8757444,7.2419335,17z/data=!3m1!4b1!4m5!3m4!1s0x479178ceeec02303:0xed3809e79b7bbbc2!8m2!3d47.8757408!4d7.2441222",
                   periode: "Janvier 2019 - Avril 2020",
                   tache: [
+                      "Utiliser VBA avec Excel",
                       "Suivre des projets (lancement des  nouveaux produits)",
                       "Gérer des fiches produits dans le logiciel SAP",
-                      "Utiliser VBA avec Excel",
                       "Créer des documents avec Illustrator",
                       "Télétravail"
                   ]

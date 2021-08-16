@@ -103,6 +103,10 @@ export default {
                         nom: 'Dart',
                         maitrise: 2
                     },
+                    {
+                        nom: 'VBA',
+                        maitrise: 2
+                    },
                   ],
               },
               {
@@ -160,12 +164,12 @@ export default {
                   titre:  'Gestion de  projets',
                   tableau:[
                     {
-                        nom: 'Node.js',
+                        nom: 'Git',
                         maitrise: 3
                     },
                     {
-                        nom: 'Express',
-                        maitrise: 2
+                        nom: 'GitHub',
+                        maitrise: 3
                     }
                   ],
               },
@@ -183,6 +187,19 @@ export default {
                     {
                         nom: 'Pack Microsoft',
                         maitrise: 3
+                    }
+                  ],
+              },
+              {
+                  titre:  'Langues',
+                  tableau:[
+                    {
+                        nom: 'Anglais',
+                        maitrise: 3
+                    },
+                    {
+                        nom: 'Allemand',
+                        maitrise: 2
                     }
                   ],
               },

@@ -60,14 +60,12 @@
             </div>
         </div>
         <div class="formationPrint">
-            <h3>Projets professionnelles en Développement Web</h3>
+            <h3>Projets professionnels en Développement Web (Octobre 2020 - Juin 2021)</h3>
+            <p>Dans le cadre de la formation avec OpenClassrooms, j'ai réalisé 7 projets professionnels.</p>
             <div class="formationPrint__reverse">
-                <div v-for="(projet, index) in projets" :key="index" class="formationPrint__project">
-                    <p class="formationPrint__date">{{  projet.fin }}<br>-<br>{{  projet.debut }}</p>
-                    <div class="formationPrint__card">
-                        <h4>Projet {{ index + 1 }} : {{  projet.nom }}</h4>
-                        <p>{{ projet.description }}</p>
-                    </div>
+                <div v-for="(projet, index) in projets" :key="index" :class="'formationPrint__card formationPrint__' + (index+1)">
+                    <h4>Projet {{ index + 1 }} : {{  projet.nom }}</h4>
+                    <p>{{ projet.description }}</p>
                 </div>
             </div>
         </div>
@@ -86,8 +84,6 @@ export default {
               {
                   nom: "Prenez en main votre formation de développeur web",
                   description:"Introduction au monde du web et mise en place des meilleures conditions pour apprendre activement et de manière autonome.",
-                  debut: "26 octobre 2020",
-                  fin: "13 novembre 2020",
                   cours: [
                       {nomCours: "Apprenez à apprendre", lien:"https://openclassrooms.com/fr/courses/4312781-apprenez-a-apprendre"},
                       {nomCours: "Comprendre le web", lien:"https://openclassrooms.com/fr/courses/1946386-comprendre-le-web"},
@@ -97,9 +93,7 @@ export default {
               },
               {
                   nom: "Transformez une maquette en site web",
-                  description:"Création du frontend pour une plateforme de réservation de vacances. Utilisation de CSS, HTML et également de Git et GitHub.",
-                  debut: "20 novembre 2020",
-                  fin: "18 décembre 2020",
+                  description:"Créer le frontend d'une plateforme de réservation de vacances avec CSS et HTML pour le développement et Git et GitHub pour la gestion des versions.",
                   cours: [
                       {nomCours: "Apprenez à utiliser la ligne de commande dans un terminal", lien:"https://openclassrooms.com/fr/courses/6173491-apprenez-a-utiliser-la-ligne-de-commande-dans-un-terminal"},
                       {nomCours: "Gérez du code avec Git et GitHub", lien:"https://openclassrooms.com/fr/courses/7162856-gerez-du-code-avec-git-et-github"},
@@ -113,9 +107,7 @@ export default {
               },
               {
                   nom: "Dynamisez une page web avec des animations CSS",
-                  description:"Création du frontend pour un site de foodtech responsive avec des animations en CSS avec Sass.",
-                  debut: "24 décembre 2020",
-                  fin: "29 janvier 2021",
+                  description:"Créer le frontend d'un site de foodtech responsive avec des animations en CSS en utilisant Sass.",
                   cours: [
                       {nomCours: "Simplifiez-vous le CSS avec Sass", lien:"https://openclassrooms.com/fr/courses/6106181-simplifiez-vous-le-css-avec-sass"},
                       {nomCours: "Créez des animations CSS modernes", lien:"https://openclassrooms.com/fr/courses/5919246-creez-des-animations-css-modernes"}
@@ -127,9 +119,7 @@ export default {
               },
               {
                   nom: "Optimisez un site web existant",
-                  description:"Analyse et optimisation du SEO et de l'accessibilité du site Web.",
-                  debut: "18 février 2021",
-                  fin: "26 février 2021",
+                  description:"Analyser et optimiser le SEO et l'accessibilité d'un site Web déjà existant.",
                   cours: [
                       {nomCours: "Optimisez le référencement de votre site (SEO) en améliorant ses preformances techniques", lien:"https://openclassrooms.com/fr/courses/5922626-optimisez-le-referencement-de-votre-site-seo-en-ameliorant-ses-performances-techniques"},
                       {nomCours: "Augmentez votre trafic grâce au référencement naturel (SEO)", lien:"https://openclassrooms.com/fr/courses/5561431-augmentez-votre-trafic-grace-au-referencement-naturel-seo"},
@@ -141,9 +131,7 @@ export default {
               },
               {
                   nom: "Construisez un site e-commerce",
-                  description:"Création du frontend d'un site e-commerce avec JavaScript et Bootstrap avec notamment la possibilité de gérer son panier et de passer commande.",
-                  debut: "1 mars 2021",
-                  fin: "7 avril 2021",
+                  description:"Créer le frontend d'un site e-commerce en utilisant JavaScript et Bootstrap avec notamment la possibilité de gérer son panier et de passer commande.",
                   cours: [
                       {nomCours: "Apprenez à programmer avec JavaScript", lien:"https://openclassrooms.com/fr/courses/6175841-apprenez-a-programmer-avec-javascript"},
                       {nomCours: "Écrivez du JavaScript pour le web", lien:"https://openclassrooms.com/fr/courses/5543061-ecrivez-du-javascript-pour-le-web"},
@@ -156,9 +144,7 @@ export default {
               },
               {
                   nom: "Construisez une API sécurisée pour une application d'avis gastronomiques",
-                  description:"Création du backend(API REST) d'une application d'avis gastronomiques en utilisant les technologies OWASP, Node.js, MongoDB et Express. Intègre la possibilité de s'inscrire et de se connecter, puis de créer, modifier et supprimer des items et une fonction de like/dislike.",
-                  debut: "6 avril 2021",
-                  fin: "3 mai 2021",
+                  description:"Créer le backend(API REST) d'une application d'avis gastronomiques en utilisant les technologies OWASP, Node.js, MongoDB et Express.",
                   cours: [
                       {nomCours: "Passez au Full stack vec Node.js, Express et MongoDB", lien:"https://openclassrooms.com/fr/courses/6390246-passez-au-full-stack-avec-node-js-express-et-mongodb"},
                       {nomCours: "Sécurisez vos applications web avec l'OWASP", lien:"https://openclassrooms.com/fr/courses/6179306-securisez-vos-applications-web-avec-lowasp"},
@@ -171,12 +157,10 @@ export default {
               },
               {
                   nom: "Créez un réseau social d'entreprise",
-                  description:"Création d'un réseau social d'une entreprise et manipulation des bases de données SQL. Utilisation de Vue.js pour le frontend et de Node.js et Sequelize en backend. ",
-                  debut: "7 mai 2021",
-                  fin: "11 juin 2021",
+                  description:"Créer un réseau social d'une entreprise et manipulation des bases de données SQL en utilisant de Vue.js pour le frontend et de Node.js et Sequelize en backend. ",
                   cours: [
                       {nomCours: "Administrez vos bases de données avec MySQL", lien:"https://openclassrooms.com/fr/courses/1959476-administrez-vos-bases-de-donnees-avec-mysql"},
-                      {nomCours: "Sécurisez vos applications web avec l'OWASP", lien:"https://openclassrooms.com/fr/courses/6179306-securisez-vos-applications-web-avec-lowasp"}
+                      {nomCours: "Créez une application web avec Vue.js", lien:"https://openclassrooms.com/fr/courses/6390311-creez-une-application-web-avec-vue-js"}
                   ],
                   livrables: {
                       lienGitHub: "https://github.com/Evan267/EvanBerger_7_07052021",

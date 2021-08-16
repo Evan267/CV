@@ -17,6 +17,7 @@
           <li><a href="https://evan-bergercv.netlify.app/"><span>CV web</span><br>
             https://evan-bergercv.netlify.app/</a>
           </li>
+          <li><i class="fas fa-car-side"></i> Permis B</li>
         </ul>
       </div>
     </div>
