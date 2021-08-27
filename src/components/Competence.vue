@@ -107,6 +107,10 @@ export default {
                         nom: 'VBA',
                         maitrise: 2
                     },
+                    {
+                        nom: 'PHP',
+                        maitrise: 2
+                    },
                   ],
               },
               {
