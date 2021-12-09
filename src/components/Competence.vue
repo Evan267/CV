@@ -109,7 +109,7 @@ export default {
                     },
                     {
                         nom: 'PHP',
-                        maitrise: 2
+                        maitrise: 3
                     },
                   ],
               },
@@ -127,7 +127,19 @@ export default {
                     {
                         nom: 'Flutter',
                         maitrise: 2
-                    }
+                    },
+                    {
+                        nom: 'Twig',
+                        maitrise: 3
+                    },
+                    {
+                        nom: 'Wordpress',
+                        maitrise: 3
+                    },
+                    {
+                        nom: 'Elementor',
+                        maitrise: 3
+                    },
                   ],
               },
               {
@@ -139,6 +151,10 @@ export default {
                     },
                     {
                         nom: 'Express',
+                        maitrise: 2
+                    },
+                    {
+                        nom: 'Symfony',
                         maitrise: 2
                     }
                   ],

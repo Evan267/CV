@@ -71,6 +71,19 @@ export default {
                       "Télétravail"
                   ]
               },
+              {
+                  emploi: "Intégrateur Web",
+                  entreprise: "Meosis",
+                  lienEntreprise: "https://www.meosis.fr",
+                  ville: "Horboourg-Wihr",
+                  lienGMaps: "https://www.google.com/maps/place/Meosis/@48.0727595,7.4048663,15z/data=!4m5!3m4!1s0x0:0xe4c34aff8f2dc0e!8m2!3d48.072767!4d7.4048611",
+                  periode: "Octobre 2021 - Actuellement",
+                  tache: [
+                      "Créer 3 sites vitrines par semaine",
+                      "Utiliser Wordpress ",
+                      "Utiliser Elementor"
+                  ]
+              },
           ]
       };
 
