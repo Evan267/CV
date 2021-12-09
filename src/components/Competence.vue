@@ -200,10 +200,6 @@ export default {
                     {
                         nom: 'Illustrator',
                         maitrise: 3
-                    },
-                    {
-                        nom: 'Pack Microsoft',
-                        maitrise: 3
                     }
                   ],
               },
