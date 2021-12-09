@@ -4,6 +4,9 @@
     font-family: 'Raleway';
 }
   
+body {
+    -webkit-print-color-adjust: exact;
+}
   
 h1, h2{
     font-family: 'Raleway';
