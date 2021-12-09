@@ -46,17 +46,6 @@ export default {
                   ]
               },
               {
-                  emploi: "Assistant de gestion logistique",
-                  entreprise: "Sharp Manufacturing France",
-                  lienEntreprise: "https://www.sharp.fr/fr",
-                  ville: "Soultz",
-                  lienGMaps: "https://www.google.fr/maps/place/Sharp+Manufacturing+France/@47.8757444,7.2419335,17z/data=!3m1!4b1!4m5!3m4!1s0x479178ceeec02303:0xed3809e79b7bbbc2!8m2!3d47.8757408!4d7.2441222",
-                  periode: "Décembre  2018",
-                  tache: [
-                      "Gérer des réceptions, de la démarque et de la production dans SAP"
-                  ]
-              },
-              {
                   emploi: "Assistant chef de projet",
                   entreprise: "Sharp Manufacturing France",
                   lienEntreprise: "https://www.sharp.fr/fr",
