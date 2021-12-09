@@ -154,6 +154,10 @@ export default {
                         maitrise: 2
                     },
                     {
+                        nom: 'Sequelize',
+                        maitrise: 3
+                    },
+                    {
                         nom: 'Symfony',
                         maitrise: 2
                     }
@@ -166,18 +170,11 @@ export default {
                         nom: 'MySQL',
                         maitrise: 3
                     },
-                    {
-                        nom: 'Sequelize',
-                        maitrise: 3
-                    },
+                    
                     {
                         nom: 'MongoDB',
                         maitrise: 3
-                    },
-                    {
-                        nom: 'Firestore',
-                        maitrise: 1
-                    },
+                    }
                   ],
               },
               {
