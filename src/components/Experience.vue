@@ -69,8 +69,10 @@ export default {
                   periode: "Octobre 2021 - Actuellement",
                   tache: [
                       "Créer 3 sites vitrines par semaine",
-                      "Utiliser Wordpress ",
-                      "Utiliser Elementor"
+                      "Création de site vitrine Wordpress avec Elementor",
+                      "Modification de projet wordpress",
+                      "Modification de projet Prestashop",
+                      "Support client"
                   ]
               },
           ]

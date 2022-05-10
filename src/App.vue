@@ -61,14 +61,14 @@
         </nav>
       </header>
       <div class="grid-print" v-on:click="CacherNavBar()">
-        <section id="etudes" class="reveal-visible-etudes">
-          <Etudes></Etudes>
+        <section id="experience" class="reveal">
+          <Experience></Experience>
         </section>
         <section id="formation" class="reveal">
           <Formation></Formation>
         </section>
-        <section id="experience" class="reveal">
-          <Experience></Experience>
+        <section id="etudes" class="reveal-visible-etudes">
+          <Etudes></Etudes>
         </section>
         <section id="competence" class="reveal">
           <Competence></Competence>
